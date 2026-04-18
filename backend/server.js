@@ -9,7 +9,7 @@ const researchRoutes = require("./routes/research");
 const app = express();
 
 // ── Middleware ──────────────────────────────────────────────────────────────
-app.use(cors({ origin: process.env.FRONTEND_URL || "*" }));
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 // ── Routes ──────────────────────────────────────────────────────────────────
